@@ -1,19 +1,19 @@
 
 
-import { cartActions } from "../../store/cart-slice";
+// import { cartActions } from "../../store/cart-slice";
 import classes from "./CartItem.module.css";
 
 const CartItem = (props) => {
   const { title, quantity, total, price } = props.item;
  
 
-  const removeItemsHandler = () => {
-    props.dispatch(cartActions.removeItems());
-  };
+  // const removeItemsHandler = () => {
+  //   props.dispatch(cartActions.removeItems());
+  // };
 
-  const addItemsHandler = () => {
-    props.dispatch(cartActions.addItems());
-  };
+  // const addItemsHandler = () => {
+  //   props.dispatch(cartActions.addItems());
+  // };
 
   return (
     <li className={classes.item}>
@@ -29,8 +29,8 @@ const CartItem = (props) => {
           x <span>{quantity}</span>
         </div>
         <div className={classes.actions}>
-          <button onClick={removeItemsHandler}>-</button>
-          <button onClick={addItemsHandler}>+</button>
+          <button >-</button>
+          <button >+</button>
         </div>
       </div>
     </li>
